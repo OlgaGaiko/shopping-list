@@ -12,7 +12,6 @@ sendInput.addEventListener('keydown', function (event){
           }) 
         }
    
-   
     if (event.key== 'Enter') {
    
     }
@@ -22,7 +21,6 @@ sendInput.addEventListener('keydown', function (event){
     }
     
     sendInput.value ='';
-    
 })
 
 
