@@ -4,29 +4,27 @@ const elements = document.querySelectorAll('#items');
 
 
 sendInput.addEventListener('keydown', function (event){
-    const messageText = sendInput.value;
+    if (event.key == 'Enter') {
+        const messageText = sendInput.value;
+        
+        const newMessage = document.createElement('div');
+        newMessage.classList.add('message');
+        newMessage.textContent = messageText;
 
-    for (let item of elements){
-        item.addEventListener('click', function(){
-            item.classList.toggle ('done');
-          }) 
-        }
+        newMessage.addEventListener('click', function() {
+        newMessage.classList.toggle ('done');
+        });
+
+        if (messageText !=''){
+            messagesContainer.append(elements);
+        };
+        
+        sendInput.value ='';
+    };
+
+});
    
-    if (event.key== 'Enter') {
-   
-    }
 
-    if (messageText !=''){
-        messagesContainer.append(elements);
-    }
-    
-    sendInput.value ='';
-})
-
-
- 
-
- 
 
 
 /* Новые элементы должны добавляться в список по нажатию на Enter */
