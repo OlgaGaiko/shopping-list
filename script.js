@@ -1,6 +1,6 @@
 const sendInput = document.querySelector('#input');
 const messagesContainer = document.querySelector('.input-wrapper');
-const elements = document.querySelectorAll('#items');
+
 
 
 sendInput.addEventListener('keydown', function (event){
@@ -16,7 +16,7 @@ sendInput.addEventListener('keydown', function (event){
         });
 
         if (messageText !=''){
-            messagesContainer.append(elements);
+            messagesContainer.append(newMessage);
         };
         
         sendInput.value ='';
