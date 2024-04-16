@@ -1,5 +1,5 @@
 const sendInput = document.querySelector('#input');
-const messagesContainer = document.querySelector('.input-wrapper');
+const messagesContainer = document.querySelector('#items');
 
 
 
